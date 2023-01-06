@@ -5,7 +5,17 @@
  */
  var maxIceCream = function(costs, coins) {
     // sort the array ascending
-    console.log(costs.sort((a, b) => a - b));
+    costs.sort((a, b) => a - b);
+    // Switch statement to handle edge cases
+    switch (true) {
+        case costs.length == 0:
+            return 0;
+        case costs.length == 1:
+            return costs[0] <= coins ? 1 : 0;
+        case costs[0] > coins:
+            return 0;
+        default:
+            
     
 };
 
