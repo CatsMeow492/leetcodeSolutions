@@ -10,3 +10,5 @@ var runningSum = function(nums) {
     }  
     return result;
 };
+
+// This was pretty trivial. I just had to add the current number to the sum and push the sum to the result array. I did this in a for loop.
