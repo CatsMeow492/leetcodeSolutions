@@ -1,0 +1,4 @@
+# Approach
+For this problem we're asked to check if charectors in a string S can be replaced 
+to get string T.
+## Intuition
