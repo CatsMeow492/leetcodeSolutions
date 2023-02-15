@@ -1,4 +1,33 @@
 # Approach
 For this problem we're asked to check if charectors in a string S can be replaced 
-to get string T.
+to get string T. Example:
+```
+Input: s = "egg", t = "add"
+Output: true
+```
 ## Intuition
+We can imagine that we will likely have to break the strings into an array
+and count the number of times each charector appears. We can then compare
+if there is a charector in s that appears the same number of times as any
+charector in t appears. If there is, we can return true. If not, we can return
+false.
+## Psuedocode
+```
+function isIsoMorphic
+    create map for S
+    create map for T
+    for each charector in S
+        if charector is not in map
+            add charector to map
+        else
+            increment value of charector in map
+    for each charector in T
+        if charector is not in map
+            add charector to map
+        else
+            increment value of charector in map
+    for each charector in S
+        if value of charector in S map is equal to value of charector in T map
+            return true
+        else 
+            return false
