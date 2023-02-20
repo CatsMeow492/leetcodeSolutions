@@ -21,3 +21,13 @@ for each price in prices
         else
             remove price
             call function again
+
+# Notes on solution
+The first solution was not the most efficient. This is because it uses
+nested for Loops. Which gives a time complexity of O(n^2). The second
+solution is more efficient because it uses a single for loop. This
+gives a time complexity of O(n). The second solution is also more
+efficient because it uses less memory. 
+
+# Algorithm
+This algorithm is called a single pass algorithm. The idea is to keep track of the minimum prices seen thus far (on the iteration). and calculate the max profit that can be made by selling at the current price. We update the min price seen so far as we iterate through the array, and update the max profit if tthe difference between the curr price and the min price is greater than the current max profit.
