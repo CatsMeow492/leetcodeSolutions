@@ -15,3 +15,8 @@ var containsDuplicate = function(nums) {
 
 
 // Alternate
+
+function hasDuplicates(array) {
+    return new Set(array).size !== array.length;
+  }
+  
