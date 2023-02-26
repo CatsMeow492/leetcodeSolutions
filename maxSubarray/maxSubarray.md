@@ -13,3 +13,18 @@ for each element in nums
         set max sum to current sum
 # Notes on Solution
 # Algorithm
+Kadane's Algorithm - Linear time algorithm that finds the maximum sum of a contiguous subarray within a one-dimensional array of numbers. The algorithm is as follows:
+1. Initialize:
+    * max_so_far = 0
+    * max_ending_here = 0
+2. Loop for each element of the array
+    * (a) max_ending_here = max_ending_here + a[i]
+    * (b) if(max_ending_here < 0)
+        * max_ending_here = 0
+    * (c) if(max_so_far < max_ending_here)
+        * max_so_far = max_ending_here
+3. return max_so_far
+# Complexity
+Time Complexity: O(n)
+Space Complexity: O(1)
+    It only uses constant space to store the max sum and the current sum.
