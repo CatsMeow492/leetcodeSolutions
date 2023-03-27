@@ -11,3 +11,6 @@ Use binary search to find the first bad version.
 # Psuedocode
 # Notes on Solution
 # Algorithm
+Binary Search Algorithm
+Time Complexity: O(log n)
+Space Complexity: O(log n)
