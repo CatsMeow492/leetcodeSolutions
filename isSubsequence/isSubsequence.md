@@ -20,3 +20,6 @@ while i < len(s) and j < len(t):
     j += 1
 # Notes on Solution
 # Algorithm
+Two-pointer algorithm / Sliding window algorithm
+Time Complexity: O(n) - Where n is the length of t because we traverse t exactly once
+Space Complexity: O(1) - We only use two pointers
